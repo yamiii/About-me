@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: Arial,"Microsoft YaHei",sans-serif;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		#container,.sections,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		#section0{
+			background:	#008B8B;
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+		}
+		#mine{float: left;}
+		#section0 h1{margin-left:-350px;}
+		#section0 img{margin-top:200px;}
+		#section1{
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			background-image: url(images/2.jpg);
+		}
+		#section2{
+			background:#F08080;
+			color: #fff;
+			text-shadow:1px 1px 1px #666;
+		}
+		#section3{
+			color: #008283;
+			background-image: url(images/4.jpeg);
+			text-shadow:1px 1px 1px #fff;
+		}
+		#section0 p{
+			color: #F1FF00;
+		}
+		#section1 p,#section1 h1{
+			color:black;
+		}
+		#section3 p{
+			color: #00A3AF;
+			font-size: 6px;
+		}
+		.left{
+			float: left;
+		}
+		#one{ float: left; width: 400px; height:300px; margin-left: 200px;
+		       text-align: left;}
+		#two{ float: left; width: 400px; height:300px; margin-left: 150px;
+		    	text-align: left;}
+		h1{
+			font-size: 6em;
+			font-weight: normal;
+		}
+		p{
+			font-size: 2em;
+			margin:0.5em 0 2em 0;
+		}
+		.intro{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+		}
+		.pages{
+			position:fixed;
+			list-style: none;
+		}
+		.vertical.pages{
+			right: 10px;
+			top: 50%;
+		}
+		.horizontal.pages{
+			left: 50%;
+			bottom: 10px;
+		}
+		.pages li{
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #fff;
+			margin: 10px 5px;
+			cursor: pointer;
+		}
+		.horizontal.pages li{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.pages li.active{
+			width: 14px;
+			height: 14px;
+			border: 2px solid #FFFE00;
+			background: none;
+			margin-left: 0;
+		}
+		#section0 .title{
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+			-webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
+			animation: sectitle0 1s ease-in-out 100ms forwards;
+		}
+		#section0 img{ width:150px; height:200px; border-radius:75px;
+		                float:right; margin-right:400px;}
+		#section0 p{
+			float: left; margin-left: 300px;}
+		@-webkit-keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@-webkit-keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container" data-PageSwitch>
+		<div class="sections">
+			<div class="section active" id="section0">
+				<div class="intro" id="mine">
+					<h1>崔雅敏</h1>
+					<p>西安邮电大学/广播电视工程<br>
+					求职意向：web前端工程师</p>
+				</div>
+					<img src="images/mine.jpg">
+			</div>
+			<div class="section" id="section1">
+				<div class="intro">
+					<h1 class="title">个人技能</h1>
+					<p> 1、熟练使用HTML和CSS等标签语言，掌握CSS3.0、HTML5<br>
+						2、熟悉CSS预处理框架less<br>
+						3、熟练使用JavaScript编写前端框架，熟悉网站兼容性<br>
+						4、熟练使用DreamWeaver、Photoshop、Webstrom等开发软件<br>
+						5、熟悉jQuery Mobile框架、了解angular.js、easy-UI、可开发移动端程序<br>
+						6、了解C语言、了解基础数据结构与算法设计<br>
+						7、了解面向对象开发语言</p>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1 class="title" style="margin-bottom: 100px">项目经验</h1>
+					<div id="one">
+						<h2>旅游网站</h2><br>
+						<span style="font-weight: bold">项目职责</span>：网页设计与开发<br>
+						<span style="font-weight: bold">实现功能</span>：分国内外展示了热门旅游景点，出行计划，特价机票等模块<br>
+						<span style="font-weight: bold">实现工具</span>：WebStorm<br>
+						<span style="font-weight: bold">项目心得</span>：在研发过程中，我们合作研发出来了一套运动框架，利用Json传值获取和设置非行间样式的函数，
+						并且封装了匀加速运动模板。完成了轮播器的轮播功能，这样会使得我们的开发更加有效快捷，
+						利用了面向对象开发了选项卡，这使我们对面向对象也有了一个初级了解。</div>
+					<div id="two">
+						<h2>大学官网</h2><br>
+						<span style="font-weight: bold">项目职责</span>：网页静态开发<br>
+						<span style="font-weight: bold">实现功能</span>：六个页面展示了学校的概况，院系结构，人才师资，教育教学等模块<br>
+						<span style="font-weight: bold">实现工具</span>：sublime<br>
+						<span style="font-weight: bold">项目心得</span>：在项目之前，我们在CSS和Bootstrap中选择了后者，
+						因为Bootstrap对于页面布局处理具有快速准确的优势，在我们的项目开发过程中，
+						我们曾一度因为依赖内置框架而是我们的导航条下拉出现问题，后来在团队的合作下，
+						我们重新启用JavaScript的写法而达到效果，我们也意识到了要把所学知识都合理利用起来，
+						才能达到最完美的效果。</div>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="intro">
+					<h2>邮箱：804485494@qq.com</h2><br>
+					<h2>手机：18092211656</h2><br>
+					<h2>想到你碗里去~。~</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/pageswitch.js"></script>
+
+</body>
+</html>
